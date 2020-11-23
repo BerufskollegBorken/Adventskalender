@@ -22,7 +22,7 @@ class Door {
 			innerNode.innerHTML = day;
 			innerNode.href = "#";
 
-			if ((currentDate.getMonth() + 1) < 12 || currentDate.getDate() < day) {
+			if (/*(currentDate.getMonth() + 1) < 12 ||*/ currentDate.getDate() < day) {
 				innerNode.className = "disabled";
 				innerNode.onclick = function () {
 					return false;
@@ -30,7 +30,24 @@ class Door {
 			} else {
 				var adventMessage = this.adventMessage;
 				innerNode.onclick = function () {
-					alert(adventMessage);
+					//alert(adventMessage);
+					Swal.fire({
+						title: adventMessage,
+						width: 600,
+						padding: '3em',
+						imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+						background: '#fff url(/images/trees.png)',
+						backdrop: `
+						  rgba(0,0,123,0.4)
+						  url("http://clipart-library.com/img/973913.gif")
+						  left top
+						  repeat
+						`
+					  })
+					console.log(adventMessage)
 					return false;
 				};
 			}
