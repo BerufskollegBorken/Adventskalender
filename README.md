@@ -70,7 +70,7 @@ Zu jedem Tür-Objekt, dessen Maße und dessen Spruch nun initialisiert ist, geh�
 
  Der `Alert` ist das PopUp, das bei Klick auf das Türchen öffnet. Der vorgegebene Alert ist praktikabel, aber nicht sehr schön anzusehen. Wiederum bei Github gibt es Projekte mit viel schöneren Alerts: https://sweetalert2.github.io/#examples.  
 
-Um die Alerts dieser Seite nutzen zu können, muss in die `index.html` das Skript eingebunden werden: 
+Um die Alerts dieser Seite nutzen zu können, muss in die `index.html` ein weiteres Skript eingebunden werden: 
 
 ```Javascript
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
