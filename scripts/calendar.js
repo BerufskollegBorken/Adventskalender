@@ -39,7 +39,7 @@ class Door {
   imageWidth: 400,
   imageHeight: 200,
   imageAlt: 'Custom image',
-						background: '#fff url(/images/trees.png)',
+						background: '#fff url(https://image.shutterstock.com/z/stock-photo-white-paper-texture-396573496.jpg)',
 						backdrop: `
 						  rgba(0,0,123,0.4)
 						  url("http://clipart-library.com/img/973913.gif")
@@ -52,7 +52,6 @@ class Door {
 				};
 			}
 		};
-
 	}
 }
 
