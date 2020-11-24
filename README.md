@@ -1,12 +1,15 @@
 # BKB-Adventskalender
 
 ## Das Ziel
-Unser Ziel ist die Programmieurung eines eigenen Adventskalenders für die BKB Homepage.
+Unser Ziel ist die Programmierung eines eigenen Adventskalenders für die BKB Homepage.
 
 ## Der Weg
 
-Da wir es in der Kürze der Zeit nicht schaffen einen eigenen Kalender zu programmieren, greifen wir in Github auf eine Vorlage (`https://github.com/hongkiat/advent-calendar`) zurück. Die Prüfung der Lizenzbedingungen gibt Klarheit, dass wir den Quelltext nehmen und verändern und verwerten dürfen. Nur wenn die Lizenzbedingungen eine freie Verwendung und Veränderung zulassen, kommt der Adventskalender für unsere Zwecke infrage. Das ist in `GNU GENERAL PUBLIC LICENSE` gegeben.
-Also bitte das Projekt im VSC klonen. Wer das Projekt danach zu seinem eigenen Projekt machen möchte, muss selbst in Github ein Projekt anlegen, das dann klonen und alle Dateien (bis auf .git) vom Originalordner in den eigenen Ordner schieben.
+Da wir es in der Kürze der Zeit nicht schaffen einen eigenen Kalender zu programmieren, greifen wir in Github auf eine Vorlage (`https://github.com/hongkiat/advent-calendar`) zurück. Die Prüfung der Lizenzbedingungen gibt Klarheit, dass wir den Quelltext nehmen, verändern und verwerten dürfen, weil der Autor die `GNU GENERAL PUBLIC LICENSE` gewäht hat.
+
+#### Los geht's
+
+Bitte das Projekt im VSC klonen. Wer das Projekt danach zu seinem eigenen Projekt machen möchte, muss selbst in Github ein Projekt anlegen, das dann klonen und alle Dateien (bis auf .git) vom Originalordner in den eigenen Ordner schieben.
 
 #### How to Test the Calendar before December?
 
@@ -19,14 +22,13 @@ if( /* ( currentDate.getMonth() + 1 ) < 12 || */ currentDate.getDate() < day ) {
 Danach kann die `index.html` direkt im Browser geöffnet werden.
 
 
-
 ### Schritt 1:
 
-In der ```index.html``` muss alles an unsere Zwecke angepasst werden. Beispielsweise kann ein anderes Bild in den Hintergrund gelegt werden. Aber Vorsicht: Auch für Bilder gelten Lizenzen. Bei großen Dateien muss zudem noch komprimiert werden und / oder geschnitten werden. Das geht mit Online-Tools oder mit Windows-Bordmitteln. Am besten bei dem Originalbild die Abmessungen / Bildgröße vorher auslesen und dann die eigene Datei entsprechend anpassen. 
+In der ```index.html``` muss alles an unsere Zwecke angepasst werden. Beispielsweise kann ein anderes Bild in den Hintergrund gelegt werden. Aber Vorsicht: Auch für Bilder gelten Lizenzen. Bei großen Dateien muss zudem noch komprimiert werden und / oder geschnitten werden. Das geht mit Online-Tools oder mit Windows-Bordmitteln. Am besten bei dem Originalbild die Abmessungen vorher auslesen und dann die eigene Datei entsprechend anpassen. 
 
 Der `<header> ... </header>` kann entfernt werden. Später werden wir nur den Kalender selbst verwerten. 
 
-Die `<ul id="adventDoors"></ul>` sind eine unsortierte Liste, die durch die `CSS`-Datei zu der Tabellenstruktur umgebaut werden. Das Schlüsselwort in der CSS-Datei, mit dem diese Umwandlung vorgenommen wird, heißt `flex`.
+Die `<ul id="adventDoors"></ul>` sind eine unsortierte Liste, die durch die `style.css`-Datei zu der Tabellenstruktur umgebaut werden. Das Schlüsselwort in der CSS-Datei, mit dem diese Umwandlung vorgenommen wird, heißt `flex`.
 
 Zwei Scriptdateien werden eingebunden. Die Datei 
 ```Javascript
@@ -41,10 +43,19 @@ enthält die Logik. Konkret erstellt sie beim Aufruf alle 24 Türchen mit ihren 
 ### Schritt 2:
 
 Die ```messages.js``` enthält alle *Daten* dieses Projekts. In der ```messages.js``` ist eine einzige Zuweisung programmiert. Die Liste der Sprüche wird der Variablen ```messages``` zugewiesen. Diese Art Liste nennt man in der Programmierung Array. Man erkennt ein Array an den umschießenden eckigen Klammern. Die Werte innerhalb des Arrays sind durch Kommas getrennt. Da jeder Spruch aus einem Text und dem Autor besteht, sind innerhalb des besagten Arrays noch 24 weitere Arrays, bei denen Text und Autor wiederum durch Komma getrennt sind. 
-Jeder einzelne Wert kann nun über seinen Index aufgerufen werden. Änderungen der Sprüche werden hier sofort wirksam. Wenn wir später neben dem Spruch und dem Namen noch ein Bild für jeden Tag verlinken möchten, müsseen wir den inneren Arrays durch Komma getrennt ein weiteres Element hinzufügen:
+Jeder einzelne Wert kann nun über seinen Index aufgerufen werden. Änderungen der Sprüche werden hier sofort wirksam. Wenn wir später neben dem Spruch und dem Namen noch ein Bild für jeden Tag verlinken möchten, müssen wir den inneren Arrays durch Komma getrennt ein weiteres Element hinzufügen:
 ```Javascript
 ["There is nothing ...", "Charles Dickens", "https://.../bild1.jpg"]
 ```
+
+> Exkurs Array:
+> Das erste Element des Arrays `messages` wird wie folgt ausgelesen: 
+> ```Javascript
+> var erstesElement = messages[0]
+> 
+> Da das Element `messages[0]` selbst auch wieder ein Array ist, wird das erste Element dieses inneren Arrays so ausgelesen: 
+> 
+> var erstesElementDesErstenInnerenArrays = messages[0][0]
 
 ### Schritt 3:
 
