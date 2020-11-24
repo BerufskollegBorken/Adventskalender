@@ -1,4 +1,4 @@
-# Adventskalender
+# BKB-Adventskalender
 
 ## Das Ziel
 Unser Ziel ist die Programmieurung eines eigenen Adventskalenders für die BKB Homepage.
@@ -97,8 +97,8 @@ Anschließend kann der Alert wunderbar ersetzt werden. Beispiel:
         })
 ```
 
-In dem Beispiel ist bereits einiges verändert worden. Z.B. fallen jetzt Schneeflocken. Dies wird mit einem `GIF`-Bild (http://clipart-library.com/img/973913.gif) erreicht sowie mit dem Schalter repeat. Passen Sie alle Bilder nach eigenen Vorstellungen unter Beachtung der Lizenzbedingungen an! Eine geeignete Lizenzbedingungen bei Bildern heißt `Creative Commons`.  
+In dem Beispiel ist bereits einiges verändert worden. Z.B. fallen jetzt Schneeflocken. Dies wird mit einem `GIF`-Bild (http://clipart-library.com/img/973913.gif) erreicht sowie mit dem Schalter `repeat`. Passen Sie alle Bilder nach eigenen Vorstellungen unter Beachtung der Lizenzbedingungèn an! Eine geeignete Lizenzbedingung bei Bildern heißt `Creative Commons`. https://commons.wikimedia.org/ ist eine gute Seite für Bilder mit entsprechender Lizenz.  
 
 ### Schritt 4:
 
-Die Sprüche müssen angepasst werden. 24 stimmungsvolle Hintergundbilder müssen ein
+Die Sprüche müssen angepasst werden. 24 stimmungsvolle Hintergundbilder müssen eingebaut werden. 
