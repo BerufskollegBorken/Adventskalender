@@ -102,3 +102,13 @@ In dem Beispiel ist bereits einiges verändert worden. Z.B. fallen jetzt Schneef
 ### Schritt 4:
 
 Die Sprüche müssen angepasst werden. 24 stimmungsvolle Hintergundbilder müssen eingebaut werden. 
+
+#### Wie 24 Bilder eingebaut werden
+
+Die Verknüfungen zu den Bildern müssen in der der `messages.js` in die 24 inneren Arrays eingebaut werden. Siehe oben. Anschließend muss zusätzlich zur Initialisierung der `this.adventMessage``(Zeile 9) noch eine Eigenschaft namens `this.Picture` initialisiert werden. Der zugewiesene Wert ist dann: 
+
+```Javascript
+this.Picture = messages[day - 1][2]
+```
+
+`[2]` steht dann also für das 3. Element in den inneren Arrays. Weitere Anpassungen müssen dann dort vorgenommen werden, wo der Alert (siehe oben) definiert wird.
