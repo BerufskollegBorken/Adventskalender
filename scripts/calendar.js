@@ -41,7 +41,7 @@ class Door {
   imageAlt: 'Custom image',
 						background: '#fff url(https://image.shutterstock.com/z/stock-photo-white-paper-texture-396573496.jpg)',
 						backdrop: `
-						  rgba(0,0,123,0.4)
+						  rgba(54,139,61,0.6)
 						  url("http://clipart-library.com/img/973913.gif")
 						  left top
 						  repeat
