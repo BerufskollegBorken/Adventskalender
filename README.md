@@ -79,12 +79,12 @@ Zu jedem Tür-Objekt, dessen Maße und dessen Spruch nun initialisiert ist, geh�
 
  ##### Der Alert
 
- Der `Alert` ist das PopUp, das bei Klick auf das Türchen öffnet. Der vorgegebene Alert ist praktikabel, aber nicht sehr schön anzusehen. Wiederum bei Github gibt es Projekte mit viel schöneren Alerts: https://sweetalert2.github.io/#examples.  
+ Der `alert(adventMessage)` ist das PopUp, das bei Klick auf das Türchen öffnet. Der vorgegebene Alert ist praktikabel, aber nicht sehr schön anzusehen. Es gibt bei Codepen oder Github viele Projekte mit viel schöneren Modals (= Alerts, die den Hintergrund ausblenden). Beispiel: https://codepen.io/RileyB/pen/XQyaXy. Eine wichtige Anforderung ist, dass das Modal responsive ist. Also auch auf edm Handy ordentlich aussieht. Weiterhin sollte das Modal nur mit `"Vanilla JS"` programmiert sein. `Jquery` sollte nicht verwendet werden.
 
-Um die Alerts dieser Seite nutzen zu können, muss in die `index.html` ein weiteres Skript eingebunden werden: 
+Um ein interessantes Modals nutzen zu können, muss in der Regel in die `index.html` ein weiteres Skript eingebunden werden: 
 
 ```Javascript
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="scripts/modal.js"></script>
 ```
 Anschließend kann der Alert wunderbar ersetzt werden. Beispiel:
 

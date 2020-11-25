@@ -1,8 +1,8 @@
 /* Styles for the Demo Wrapper */
-html {
+/*html {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
-}
+}*/
 *,
 *:before,
 *:after {
@@ -19,36 +19,15 @@ html {
 .cf {
   *zoom: 1;
 }
-body {
+/*body {
   margin: 0;
   background-color: #e6e9ed;
   font-family: "Lato", sans-serif;
-}
-header {
-  background-color: #254d86;
-}
-header h1,
-header a {
-  padding: 15px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-header h1 {
-  float: left;
-  margin: 0;
-}
-header a {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
-  float: right;
-  background-color: #1a365e;
-}
-header a:hover {
-  background-color: #1f4272;
-}
+}*/
+
 .demo-content {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
   max-width: 400px;
   margin-top: 90px;
   margin-right: auto;

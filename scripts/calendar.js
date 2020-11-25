@@ -6,7 +6,7 @@ class Door {
 
 		this.width = ((calendar.width - 0.1 * calendar.width) / 4) * 0.95;
 		this.height = ((calendar.height - 0.1 * calendar.height) / 6) * 0.95;
-		this.adventMessage = 'Day ' + day + ' of Advent\n\n' + '"' + messages[day - 1][0] + '"\n\n\t' + 'by ' + messages[day - 1][1] + '\n\n';
+		this.adventMessage = 'BKB-Adventskalender #' + day + '\n\n' + '"' + messages[day - 1][0] + '"\n\n\t' + 'by ' + messages[day - 1][1] + '\n\n';
 		this.x = (0.04 * calendar.width + ((day - 1) % 4) * (1.1 * this.width));
 		this.y = -(0.96 * calendar.height - Math.floor((day - 1) / 4) * (1.1 * this.height));
 
@@ -29,17 +29,18 @@ class Door {
 				};
 			} else {
 				var adventMessage = this.adventMessage;
-				innerNode.onclick = function () {
-					//alert(adventMessage);
+				innerNode.onclick = function () {	
 					Swal.fire({
-						title: adventMessage,
+						title: '<font color=white>' + adventMessage +'</font>',
+						confirmButtonText: `Schließen`,
+						confirmButtonColor: 'black',
 						width: 600,
 						padding: '3em',
 						imageUrl: 'https://unsplash.it/400/200',
-  imageWidth: 400,
-  imageHeight: 200,
-  imageAlt: 'Custom image',
-						background: '#fff url(https://image.shutterstock.com/z/stock-photo-white-paper-texture-396573496.jpg)',
+						imageWidth: 400,
+						imageHeight: 200,
+						imageAlt: 'Custom image',
+						background: '#B01E1E url(https://image.freepik.com/free-vector/damaged-crumpled-red-background_399-2147490747.jpg)',
 						backdrop: `
 						  rgba(54,139,61,0.6)
 						  url("http://clipart-library.com/img/973913.gif")
@@ -47,7 +48,7 @@ class Door {
 						  repeat
 						`
 					  })
-					console.log(adventMessage)
+					
 					return false;
 				};
 			}
