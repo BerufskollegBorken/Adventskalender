@@ -1,8 +1,6 @@
 .AdventFooter {
-	color:#FFFF00;
-	  text-align:right;
-   font-size: 0.75em;
-	   /*font-family: 'Alex Brush';font-size: 1.5em;*/
+	color:#979797;
+	font-size: 0.75em;
    }
    
    .coolFont {
@@ -27,8 +25,9 @@
 	 color: #FFFF00;
 	 cursor: pointer;
 	 display: inline-block;
-	 font-family: Arial;
-	 font-size: 1.5em;
+	   font-family: 'Alex Brush';
+	 font-size: 1.3em;
+   font-weight:bold;
 	 padding: 5px 10px;
 	 text-align: center;
 	 text-decoration: none;
