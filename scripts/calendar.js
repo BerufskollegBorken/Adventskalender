@@ -1,3 +1,20 @@
+
+
+$.fn.christmas = function() {
+	$(this).each(function() {
+	  $(this).html($(this).text().split("").map(function(v, i) {
+		return '<span class="christmas-' + (i % 2 == 0 ? 'gold' : 'blue') + '">' + v + '</span>';
+	  }).join(""));
+	});
+  };
+  
+  $(function() { // don't forget $(document).ready!
+	$('h1.christmas').christmas();
+  });
+  
+
+
+
 var myCal = document.getElementById("adventCal");
 var currentDate = new Date();
 
@@ -34,7 +51,7 @@ class Door {
 						title: '<font color=white>' + adventMessage +'</font>',
 						confirmButtonText: `Schließen`,
 						confirmButtonColor: 'black',
-						width: 600,
+						width: '600',
 						padding: '3em',
 						imageUrl: 'https://unsplash.it/400/200',
 						imageWidth: 400,
