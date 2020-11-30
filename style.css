@@ -1,83 +1,81 @@
-.advBtnDisabled{
-	display: block;
-	 font-size: 1.3em;
-	 background: transparent;
-	 padding: 5px;
-	 text-align: center;
-	 border-radius: 5px;
-	 color: white;
-	 font-weight: bold;
-	 font-family:'Alex Brush';
-	 border: 2px solid #4CAF50; /* Green */
- }
-
-
-.advBtnEnabled {
-	 href="#" 
-	 dataset.target="_self" rel="noopener noreferrer" data-toggle="modal"
-	 font-weight: bold;
-	 text-align: center;  
-	 display: block;
-   	 background-color: #004A7F;
-	 -webkit-border-radius: 5px;
-	 border-radius: 5px;
-	 border: 2px solid #FFFF00; /* Green */
-	 width: 100%;
-	 color: #FFFF00;
-	 cursor: pointer;
-	 display: inline-block;
-	 font-family: 'Alex Brush';
-	 font-size: 1.3em;
-     font-weight:bold;
-	 padding: 5px 10px;
-	 text-align: center;
-	 text-decoration: none;
-	 -webkit-animation: glowing 1500ms infinite;
-	 -moz-animation: glowing 1500ms infinite;
-	 -o-animation: glowing 1500ms infinite;
-	 animation: glowing 1500ms infinite;
-   }
-   @-webkit-keyframes glowing {
-	 0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-	 50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-	 100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-   }
-   
-   @-moz-keyframes glowing {
-	 0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-	 50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-	 100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-   }
-   
-   @-o-keyframes glowing {
-	 0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-	 50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-	 100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-   }
-   
-   @keyframes glowing {
-	 0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-	 50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-	 100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-   }
-  
+.ueberschrift {
+	text-align:center;
+	width:100%;
+	font-weight:bold;
+		font-family: 'Alex Brush';font-size: 2em;
+	background: -webkit-linear-gradient(#ff0000, #ffff00);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+}
  
-   
-   .fusion-modal {
-	   background-image: url("https://media.giphy.com/media/Kfrq2V2A7wODGMdEXQ/giphy.gif");
-   }
+.buttonNormal{
+	display: block;
+	font-size: 1.3em;
+	background: transparent;
+	padding: 5px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-family:'Alex Brush';
+	border: 2px solid #4CAF50; /* Green */
+}
 
-   .AdventFooter {
+.buttonGlowing {
+	font-weight: bold;
+	text-align: center;  
+	display: block;
+	background-color: #004A7F;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #FFFF00; /* Green */
+	width: 100%;
+	color: #FFFF00;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Alex Brush';
+	font-size: 1.3em;
+	font-weight:bold;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-animation: glowing 1500ms infinite;
+	-moz-animation: glowing 1500ms infinite;
+	-o-animation: glowing 1500ms infinite;
+	animation: glowing 1500ms infinite;
+}
+
+@-webkit-keyframes glowing {
+	0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+	50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+	100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+	0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+	50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+	100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+	0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+	50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+	100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+	0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+	50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+	100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+/* Schneeflocken im Hintergrund des Modals*/
+
+.fusion-modal {
+	background-image: url("https://media.giphy.com/media/Kfrq2V2A7wODGMdEXQ/giphy.gif");
+}
+
+.AdventFooter {
 	color:#979797;
 	font-size: 0.75em;
-}
-   
-.coolFont {
-   text-align:center;
-   width:100%;
-   font-weight:bold;
-   font-family: 'Alex Brush';font-size: 2em;
-   background: -webkit-linear-gradient(#ff0000, #ffff00);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
 }
