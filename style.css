@@ -24,6 +24,26 @@
 	background: transparent;
   }
   
+.enabled {  
+	padding: 5px;
+	margin: 5px;  
+	width: 45px;
+	height: 45px;  
+	line-height: 45px;
+	text-align: center;	
+	  border-radius: 5px;	
+	  border: 2px solid #4CAF50; /* Green */
+  }
+
+li.enabled a {
+	cursor: default;  
+	font-size: 1.5em;
+	color: green;
+	font-weight: bold;
+	font-family:'Alex Brush';	 
+	text-decoration: none;
+  }
+
   .disabled {  
 	padding: 5px;
 	margin: 5px;  
@@ -35,7 +55,7 @@
 	  border: 2px solid #4CAF50; /* Green */
   }   
   
-  .enabled {
+  .glowing {
 	padding: 5px;
 	margin: 5px;  
 	width: 45px;
@@ -79,7 +99,7 @@
 		 background-image: url("https://media.giphy.com/media/Kfrq2V2A7wODGMdEXQ/giphy.gif");
   }
   
-  li.enabled a {
+  li.glowing a {
 	cursor: default;  
 	font-size: 1.9em;
 	color: yellow;

@@ -20,26 +20,26 @@
   <li id="a15" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a15">15</a></li>
   <li id="a13" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a13">13</a></li>
   <li id="a17" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a17">17</a></li>
-  <li id="a02" class="disabled"> <a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a02">2</a></li>
+  <li id="a02" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a02">2</a></li>
   <li id="a09" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a09">9</a></li>
   <li id="a19" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a19">19</a></li>
   <li id="a11" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a11">11</a></li>
   <li id="a04" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a04">4</a></li>
-  <li id="a22" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a22">22</a></li>
-  
-  
+<li id="a22" class="disabled"><a href="#" target="_self" rel="noopener noreferrer" data-toggle="modal" data-target=".fusion-modal.a22">22</a></li>
 </ul>
-
 <span class="adventFooter"><a target="_self" rel="noopener noreferrer" data-target=".fusion-modal.fussnote">by GW18</a></span>
-    
 <script>
-  var currentDate = (new Date()).getDate();        
+  var currentDate = (new Date()).getDate();
+  console.clear();
   console.log("Tageszahl: " + currentDate);
-  if(currentDate < 25){
-    var e = "a" + ("0" + currentDate).slice(-2);
-    console.log("Aktuelle ID: " + e);
+  
+  for (var i = 1; i <= currentDate; i++) {   
+    var e = "a" + ("0" + i).slice(-2);  
     var li = document.getElementById(e);
-    li.className = "enabled";            
-    console.log(li);
-  }    
+    li.className = "enabled";
+    if(currentDate == i){
+      li.className = "glowing";                 
+    }
+   console.log(li);   
+  }        
 </script>
